@@ -1,0 +1,187 @@
+.rotateAnimation{
+    animation: rotateTo 1s infinite normal ;
+}
+@keyframes rotateTo{
+    from{transform:rotateY(0deg);}
+    to{transform:rotateY(180deg);}
+}
+
+@keyframes fade {    
+    from {opacity: 1.0;}
+    50% {opacity: 0.4;}
+    to {opacity: 1.0;}
+}
+
+@keyframes fadein {    
+    from {opacity: 0;margin-left: 100px}
+    to {opacity: 0.8;margin-left:0}
+}
+
+
+.bdMarker-inner{
+    background: url('/uploads/wechat/oLX7p01TFSqr8hXrrSZJGYVIpQIc/file/浙江省廉政教育基地/assets/popRight.png');
+    background-size: cover;
+    width:615px !important;
+    height:180px !important;
+    padding: 5px;
+    border-radius: 5px;
+    transform:scale(0.4);
+}
+.bdMarker-inner .title {
+    position: absolute;
+    font-size: 42px;
+    left: 300px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.bdMarker-inner .content {
+    display: flex;
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+.bdMarker-inner .device {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.bdMarker-inner .device-title {
+    font-size:30px;
+    color:#fff;
+    font-weight: 500;
+}
+
+.bdMarker-inner .device-num {
+    font-weight: 800;
+    color: #fff;
+    font-size:45px;
+}
+
+.bdMarker-inner .alarm {
+    color: #C43C3C;
+    left: 330px;
+}
+
+.pkLegend {
+    position: fixed;
+    left: 500px;
+    bottom: 120px;
+    transform: scale(0.6);
+    background: rgba(255,255,255,0.2);
+    padding: 20px 25px ;
+    border-radius: 10px;
+    display: none;
+}
+.pkLegend>div {
+    display: flex;
+    align-items: center;
+    color: #ddd;
+    font-size:18px;
+}
+.pkLegend>div:first-child {
+    margin-bottom:20px;
+}
+.pkLegend img {
+    margin-right:20px;
+}
+
+.ripple {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    z-index:-1;
+    display: none;
+}
+
+.ripple.active {
+    display:flex;
+}
+
+.ripple span{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: ripple 6s linear infinite;
+    animation-delay: calc(1.2s * var(--i));
+    border: none;
+    background: rgba(240, 42, 7, 0.5)
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+.flMarker-inner{
+    background: url('/uploads/wechat/oLX7p01TFSqr8hXrrSZJGYVIpQIc/file/浙江省廉政教育基地/assets/popFloor.png');
+    background-size: cover;
+    width:295px !important;
+    height:48px !important;
+    font-size: 24px;;
+    padding: 5px;
+    border-radius: 5px;
+    transform:scale(0.4);
+    opacity: 0.8;
+    animation: fadein 1.5s 1 normal ;
+}
+.flMarker-inner .title {
+    position: absolute;
+    left: 200px;
+    top: 15px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.flTag-inner{
+    background: url('/uploads/wechat/oLX7p01TFSqr8hXrrSZJGYVIpQIc/file/浙江省廉政教育基地/assets/popFloor2.png');
+    background-size: cover;
+    width:255px !important;
+    height:54px !important;
+    font-size: 24px;;
+    padding: 5px;
+    border-radius: 5px;
+    /* transform:scale(1); */
+    opacity: 0.8;
+    animation: fadein 1.5s 1 normal ;
+}
+.flMarker-inner .title {
+    position: absolute;
+    left: 200px;
+    top: 15px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.flTag {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.flTag .title {
+    position: absolute;
+    left: 95px;
+    top: 15px;
+    font-weight: 800;
+    color: #fff;
+}
